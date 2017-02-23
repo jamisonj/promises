@@ -95,5 +95,5 @@ exports.readDirFiles('C:/Users/justi/Documents/Work/Curb Painting').then(functio
 	console.log(contents);
 })
 .catch(function(error) {
-	// console.log('Error was returned: ' + error);
+	console.log(error);
 });
