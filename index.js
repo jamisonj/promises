@@ -26,40 +26,6 @@ exports.readDir = function(directoryPath) {
     });
 };
 
-// exports.readDirFiles = function(directoryPath) {
-// 	return new Promise(function(resolve, reject) {
-		
-// 		fs.readdir(directoryPath, (err, files) => {
-// 		  if (err) {
-// 		  	return reject(err);
-// 		  }
-// 		  else {
-
-// 		  	var filePath = '';
-// 		  	console.log(files);
-
-// 		  	for (let i = 0; i < files.length; i++) {
-
-// 		  		filePath = path.resolve(directoryPath, files[i]);
-
-// 		  		console.log(filePath);
-
-// 		  		fs.readFile(filePath, 'utf-8', (error, data) => {
-// 					if (error) {
-// 						console.log("Error in directory: " + filePath);
-// 						return reject(error);
-// 					}
-// 					// console.log(data);
-// 					resolve(data);
-// 				});
-// 		  	}
-// 		  	//
-// 		  }
-// 		  // resolve(files);
-// 		});
-//     });
-// }
-
 exports.readDirFiles = function(directoryPath) {
 
 	return exports.readDir(directoryPath)
@@ -91,9 +57,9 @@ exports.readDirFiles = function(directoryPath) {
 // 	console.log(contents);
 // });
 
-exports.readDirFiles('C:/Users/justi/Documents/Work/Curb Painting').then(function(contents) {
-	console.log(contents);
-})
-.catch(function(error) {
-	console.log(error);
-});
+// exports.readDirFiles('C:/Users/justi/Documents/Work/Curb Painting').then(function(contents) {
+// 	console.log(contents);
+// })
+// .catch(function(error) {
+// 	console.log(error);
+// });
